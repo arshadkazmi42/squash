@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "commander": "^2.19.0"
+  },
+  "name": "squash",
+  "description": "Creating local alias for commands",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "squash": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arshadkazmi42/squash.git"
+  },
+  "keywords": [
+    "squash",
+    "cli",
+    "commands",
+    "alias"
+  ],
+  "author": "Arshad Kazmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arshadkazmi42/squash/issues"
+  },
+  "homepage": "https://github.com/arshadkazmi42/squash#readme"
+}
