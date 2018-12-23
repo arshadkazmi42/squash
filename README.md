@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# squash
+# Squash
 
 To run follow the steps
 
@@ -9,6 +8,3 @@ To run follow the steps
 - `squash something`
 
 This will print `Hello world something`
-=======
-# Squash
->>>>>>> d7049597dc42a2cc8691722354257ff51baeff06
