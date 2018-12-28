@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "commander": "^2.19.0"
+    "child_process": "^1.0.2"
   },
   "name": "squash",
   "description": "Creating local alias for commands",
