@@ -9,7 +9,9 @@ Squash converts your shell commands to a named commands and you can run the comm
 - Install the library
     `yarn global add squash`
 - **Export the squash path, to make the commands executable.**
+    
     `export PATH=$PATH:/usr/local/squash`
+    
     To make this export permanent [read here](https://askubuntu.com/a/500794/579860)
 - Now try running `squash --help`. This should display details on using squash
 - This completes your setup
