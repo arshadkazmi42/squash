@@ -43,6 +43,7 @@ $ list_squash
 - **--alias**: to give name to a command
 - **--help**: to get help for squash
 - **--list**: to list all the created commands
+- **--system_alias**: to list all the system reserved aliases
 
 ## Limitations
 
