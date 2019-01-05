@@ -10,7 +10,7 @@ Squash converts your shell commands to a named commands and you can run the comm
     `yarn global add squash`
 - **Export the squash path, to make the commands executable.**
     
-    `export PATH=$PATH:/usr/local/squash`
+    `export PATH=$PATH:/usr/local/.squash`
     
     To make this export permanent [read here](https://askubuntu.com/a/500794/579860)
 - Now try running `squash --help`. This should display details on using squash
@@ -49,7 +49,7 @@ $ list_squash
 
 - It does not work in windows.
 - It does not supports `cd` command
-- **Manually exporting the path `/usr/local/squash` is very important.**
+- **Manually exporting the path `/usr/local/.squash` is very important.**
 
 ## Contributing
 
