@@ -116,6 +116,7 @@ describe('Verifies async features', function() {
     expect(console.log.getCall(46).args[0]).to.equal('ypbind, ypcat, ypinit, ypmatch, yppasswd, yppasswdd, yppoll, yppush, ypserv, ypset, yptest, ypwhich, ypxfr, zcat, zcmp, zdiff, zdump, zforce, zgrep, zic')
   });
 
+  // This test is not supported by travis. So disabled it
   // it('squash a command', async () => {
   //   squash(SQUASH_FLAG)
   //   assert.isTrue(console.log.called, "log should have been called.");
