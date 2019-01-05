@@ -50,7 +50,6 @@ $ list_squash
 - It does not work in windows.
 - It does not supports `cd` command
 - **Manually exporting the path `/usr/local/squash` is very important.**
-- System level commands validation is limited. We are working on this.
 
 ## Contributing
 
