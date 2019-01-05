@@ -1,5 +1,5 @@
 {
-  "name": "squash",
+  "name": "ak-squash",
   "description": "Creating local alias for commands",
   "version": "1.0.0",
   "main": "index.js",
