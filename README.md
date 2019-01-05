@@ -7,7 +7,7 @@ Squash converts your shell commands to a named commands and you can run the comm
 ## Setup
 
 - Install the library
-    `yarn global add squash`
+    `yarn global add ak-squash`
 - **Export the squash path, to make the commands executable.**
     
     `export PATH=$PATH:/usr/local/.squash`
