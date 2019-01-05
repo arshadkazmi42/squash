@@ -9,7 +9,7 @@
     "sinon": "^7.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/mocha/bin/mocha test/"
   },
   "bin": {
     "squash": "index.js"
