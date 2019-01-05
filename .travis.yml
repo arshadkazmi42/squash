@@ -1,6 +1,3 @@
-sudo: required
 language: node_js
 node_js:
   - "node"
-before_script:
-  - mkdir /usr/local/squash
