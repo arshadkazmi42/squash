@@ -55,4 +55,4 @@ $ list_squash
 
 We are constantly working on improving squash and we need all the help we can get.
 You can contribute to this project by giving [suggestions](https://github.com/arshadkazmi42/squash/issues/new), fixing open [issues](https://github.com/arshadkazmi42/squash/issues) or by implementing a new feature.
-We are working on adding a contributing guide soon.
+Read our contibution guide [here](CONTRIBUTING.md)
