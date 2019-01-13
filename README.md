@@ -1,5 +1,7 @@
 # Squash :tada:
 
+<img src="https://github.com/arshadkazmi42/squash/assets/squash.png" alt="Squash"/> <br>
+
 Let's squash your commands.
 
 Squash converts your shell commands to a named commands and you can run the command using the name given to it using squash.
