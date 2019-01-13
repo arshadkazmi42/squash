@@ -1,6 +1,6 @@
 # Squash :tada:
 
-<img src="https://github.com/arshadkazmi42/squash/assets/squash.png" alt="Squash"/> <br>
+<img src="https://raw.githubusercontent.com/arshadkazmi42/squash/master/assets/squash.png" alt="Squash"/> <br>
 
 Let's squash your commands.
 
