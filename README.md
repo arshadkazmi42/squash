@@ -1,5 +1,11 @@
 # Squash :tada:
 
+[![NPM Downloads](https://img.shields.io/npm/dt/squash.svg)](https://www.npmjs.com/package/squash)
+[![Package Size](https://img.shields.io/bundlephobia/min/squash.svg)](https://www.npmjs.com/package/squash)
+[![NPM Version](https://img.shields.io/npm/v/squash.svg)](https://www.npmjs.com/package/squash)
+[![Contributors](https://img.shields.io/github/contributors/arshadkazmi42/squash.svg)](https://github.com/arshadkazmi42/squash/graphs/contributors)
+[![Commit](https://img.shields.io/github/last-commit/arshadkazmi42/squash.svg)](https://github.com/arshadkazmi42/squash/commits/master)
+
 <img src="https://raw.githubusercontent.com/arshadkazmi42/squash/master/assets/squash.gif" alt="Squash"/><br>
 
 Let's squash your commands.
