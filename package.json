@@ -1,7 +1,7 @@
 {
   "name": "ak-squash",
   "description": "Creating local alias for commands",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "devDependencies": {
     "chai": "^4.2.0",
