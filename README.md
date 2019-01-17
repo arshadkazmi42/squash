@@ -29,6 +29,8 @@ Syntax for using squash is
 - **COMMAND**: This is your full command which needs to be given a name
 - **NAME_FOR_COMMAND**: This is the name which you want to assign to the command
 
+**Note**: You can wrap the command between `"COMMAND"` if the command contains any types of quotes or spaces
+
 #### Example
 
 ```
