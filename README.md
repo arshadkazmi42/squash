@@ -18,11 +18,14 @@ Squash converts your shell commands to a named commands and you can run the comm
 
 Please consider donating, if you like my work
 
+## Install
+
+```
+$ npm i -g ak-squash
+```
 
 ## Setup
 
-- Install the library
-    `yarn global add ak-squash`
 - **Export the squash path, to make the commands executable.**
     
     `export PATH=$PATH:/usr/local/.squash`

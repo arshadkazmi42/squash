@@ -16,7 +16,8 @@ The basic guidelines for contributing are as follows:
 - Make the required changes
 - Test the changes by using below command
   - `yarn` (Installs all the dependencies)
-  - `yarn test`
+  - `yarn test` (This will test only the tests which will be executed by travis)
+  - `mocha tests` (This will test all the tests)
 - Create a pull request using below commands
   - `git add --all`
   - `git commit -m "your commit message"`
