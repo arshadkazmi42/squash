@@ -13,6 +13,8 @@ Let's squash your commands.
 
 Squash converts your shell commands to a named commands and you can run the command using the name given to it using squash.
 
+> Give us a :star: if you like our work :heart:
+
 <a href="https://www.buymeacoffee.com/arshadkazmi42" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 <a href="https://www.patreon.com/bePatron?u=15454240" target="_blank"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="40"></a>
 
