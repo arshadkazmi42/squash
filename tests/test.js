@@ -118,26 +118,6 @@ describe('Verifies async features', function() {
     expect(console.log.getCall(46).args[0]).to.equal('ypbind, ypcat, ypinit, ypmatch, yppasswd, yppasswdd, yppoll, yppush, ypserv, ypset, yptest, ypwhich, ypxfr, zcat, zcmp, zdiff, zdump, zforce, zgrep, zic')
   });
 
-  // This test is not supported by travis. So disabled it
-  // it('squash a command', async () => {
-  //   squash(SQUASH_FLAG)
-  //   assert.isTrue(console.log.called, "log should have been called.");
-  //   expect(console.log.getCall(0).args[0]).to.equal('\n');
-  //   expect(console.log.getCall(1).args[0]).to.equal('#########################################################################################');
-  //   expect(console.log.getCall(2).args[0]).to.equal('####       ######        #####  ########  #####        ########        ####  ########  ##');
-  //   expect(console.log.getCall(3).args[0]).to.equal('###  ###########  ######  ####  ########  ####  ######  #####  ############  ########  ##');
-  //   expect(console.log.getCall(4).args[0]).to.equal('##  ###########  ########  ###  ########  ###  ########  ###  #############  ########  ##');
-  //   expect(console.log.getCall(5).args[0]).to.equal('###  ##########  ########  ###  ########  ###  ########  ####  ############  ########  ##');
-  //   expect(console.log.getCall(6).args[0]).to.equal('####       ####  ########  ###  ########  ###  ########  #####         ####            ##');
-  //   expect(console.log.getCall(7).args[0]).to.equal('#########   ###  ########  ###  ########  ###            ############  ####  ########  ##');
-  //   expect(console.log.getCall(8).args[0]).to.equal('##########  ####  ######  ####  ########  ###  ########  #############  ###  ########  ##');
-  //   expect(console.log.getCall(9).args[0]).to.equal('#########  ######       #######  ######  ####  ########  ############  ####  ########  ##');
-  //   expect(console.log.getCall(10).args[0]).to.equal('###       #############  ########      ######  ########  ####        ######  ########  ##');
-  //   expect(console.log.getCall(11).args[0]).to.equal('#########################################################################################');
-  //   expect(console.log.getCall(12).args[0]).to.equal('\n');
-  //   await validateFileContent();
-  // });
-
   it('prints squashed command', function() {
     squash(LIST_FLAG)
     assert.isTrue(console.log.called, "log should have been called.");
