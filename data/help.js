@@ -14,5 +14,9 @@ module.exports = [
   {
     "flag": "--system_alias",
     "description": "Show list of system reserved aliases."
+  },
+  {
+    "flag": "--pass-args",
+    "description": "Arguments called on the alias will be passed to the command. Use when creating the alias"
   }
 ];
