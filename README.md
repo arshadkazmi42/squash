@@ -6,6 +6,7 @@
 [![NPM Version](https://img.shields.io/npm/v/ak-squash.svg)](https://www.npmjs.com/package/ak-squash)
 [![Contributors](https://img.shields.io/github/contributors/arshadkazmi42/squash.svg)](https://github.com/arshadkazmi42/squash/graphs/contributors)
 [![Commit](https://img.shields.io/github/last-commit/arshadkazmi42/squash.svg)](https://github.com/arshadkazmi42/squash/commits/master)
+[![Node Version](https://img.shields.io/badge/node-v8.0%2B-brightgreen.svg)](https://github.com/arshadkazmi42/squash/)
 
 <img src="https://raw.githubusercontent.com/arshadkazmi42/squash/master/assets/squash.gif" alt="Squash"/><br>
 
