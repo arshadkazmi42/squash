@@ -6,6 +6,7 @@ const squash = require('../lib/squash');
 const HELP_FLAG = [ '--help' ];
 const SYSTEM_ALIAS_FLAG = [ '--system_alias' ];
 const LIST_FLAG = [ '--list' ];
+const VERSION_FLAG = [ '--version' ];
 
 
 describe('Verifies async features', function() {
@@ -43,11 +44,12 @@ describe('Verifies async features', function() {
     expect(console.log.getCall(20).args[0]).to.equal('\t--help\t :  \tShow details of Squash.');
     expect(console.log.getCall(21).args[0]).to.equal('\t--system_alias\t :  \tShow list of system reserved aliases.');
     expect(console.log.getCall(22).args[0]).to.equal('\t--pass-args\t :  \tArguments called on the alias will be passed to the command. Use when creating the alias');
-    expect(console.log.getCall(23).args[0]).to.equal('\n');
-    expect(console.log.getCall(24).args[0]).to.equal('Notes');
-    expect(console.log.getCall(25).args[0]).to.equal(' ✔ Provide absolute path of the files/directory, if the commands uses any file/directory from your system');
-    expect(console.log.getCall(26).args[0]).to.equal(' ✔ Wrap the command in double quotes (""), if command comprises of spaces or special characters');
-    expect(console.log.getCall(27).args[0]).to.equal('\n\n');
+    expect(console.log.getCall(23).args[0]).to.equal('\t--version\t :  \tShow Squash version');
+    expect(console.log.getCall(24).args[0]).to.equal('\n');
+    expect(console.log.getCall(25).args[0]).to.equal('Notes');
+    expect(console.log.getCall(26).args[0]).to.equal(' ✔ Provide absolute path of the files/directory, if the commands uses any file/directory from your system');
+    expect(console.log.getCall(27).args[0]).to.equal(' ✔ Wrap the command in double quotes (""), if command comprises of spaces or special characters');
+    expect(console.log.getCall(28).args[0]).to.equal('\n\n');
   });
 
   it('prints all sysytem aliases', function(){
@@ -120,5 +122,24 @@ describe('Verifies async features', function() {
     expect(console.log.getCall(12).args[0]).to.equal('\n');
     expect(console.log.getCall(13).args[0]).to.equal('Alias -> Command');
     expect(console.log.getCall(14).args[0]).to.equal('================\n');
+  });
+
+  it('prints version', function() {
+    squash(VERSION_FLAG);
+    assert.isTrue(console.log.called, 'log should have been called.');
+    expect(console.log.getCall(0).args[0]).to.equal('\n');
+    expect(console.log.getCall(1).args[0]).to.equal('#########################################################################################');
+    expect(console.log.getCall(2).args[0]).to.equal('####       ######        #####  ########  #####        ########        ####  ########  ##');
+    expect(console.log.getCall(3).args[0]).to.equal('###  ###########  ######  ####  ########  ####  ######  #####  ############  ########  ##');
+    expect(console.log.getCall(4).args[0]).to.equal('##  ###########  ########  ###  ########  ###  ########  ###  #############  ########  ##');
+    expect(console.log.getCall(5).args[0]).to.equal('###  ##########  ########  ###  ########  ###  ########  ####  ############  ########  ##');
+    expect(console.log.getCall(6).args[0]).to.equal('####       ####  ########  ###  ########  ###  ########  #####         ####            ##');
+    expect(console.log.getCall(7).args[0]).to.equal('#########   ###  ########  ###  ########  ###            ############  ####  ########  ##');
+    expect(console.log.getCall(8).args[0]).to.equal('##########  ####  ######  ####  ########  ###  ########  #############  ###  ########  ##');
+    expect(console.log.getCall(9).args[0]).to.equal('#########  ######       #######  ######  ####  ########  ############  ####  ########  ##');
+    expect(console.log.getCall(10).args[0]).to.equal('###       #############  ########      ######  ########  ####        ######  ########  ##');
+    expect(console.log.getCall(11).args[0]).to.equal('#########################################################################################');
+    expect(console.log.getCall(12).args[0]).to.equal('\n');
+    expect(console.log.getCall(13).args[0]).to.contain('Squash version is '); // We don't want to check for the actual version number to avoid changing this every release
   });
 });
