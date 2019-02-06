@@ -67,6 +67,7 @@ $ list_squash
 - **--help**: to get help for squash
 - **--list**: to list all the created commands
 - **--system_alias**: to list all the system reserved aliases
+- **--pass-args**: arguments called on the alias will be passed to the command. Use when creating the alias
 
 ## Limitations
 
