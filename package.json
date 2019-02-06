@@ -1,7 +1,7 @@
 {
   "name": "ak-squash",
   "description": "Creating local alias for commands",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha tests/test.js"
