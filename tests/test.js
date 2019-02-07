@@ -8,6 +8,8 @@ const SYSTEM_ALIAS_FLAG = [ '--system_alias' ];
 const LIST_FLAG = [ '--list' ];
 const VERSION_FLAG = [ '--version' ];
 
+const PACKAGE_CONFIG = require('../package.json');
+
 
 describe('Verifies async features', function() {
   beforeEach(function() {
@@ -140,6 +142,6 @@ describe('Verifies async features', function() {
     expect(console.log.getCall(10).args[0]).to.equal('###       #############  ########      ######  ########  ####        ######  ########  ##');
     expect(console.log.getCall(11).args[0]).to.equal('#########################################################################################');
     expect(console.log.getCall(12).args[0]).to.equal('\n');
-    expect(console.log.getCall(13).args[0]).to.contain('Squash version is '); // We don't want to check for the actual version number to avoid changing this every release
+    expect(console.log.getCall(13).args[0]).to.equal(PACKAGE_CONFIG.version);
   });
 });
