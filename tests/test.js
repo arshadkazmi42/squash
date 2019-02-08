@@ -4,7 +4,7 @@ const sinon  = require('sinon');
 const squash = require('../lib/squash');
 
 const HELP_FLAG = [ '--help' ];
-const SYSTEM_ALIAS_FLAG = [ '--system_alias' ];
+const SYSTEM_ALIAS_FLAG = [ '--system-alias' ];
 const LIST_FLAG = [ '--list' ];
 const VERSION_FLAG = [ '--version' ];
 
@@ -44,7 +44,7 @@ describe('Verifies async features', function() {
     expect(console.log.getCall(18).args[0]).to.equal('\t--alias\t :  \tAdds the alias for the command, this will be treated as name for that command.');
     expect(console.log.getCall(19).args[0]).to.equal('\t--list\t :  \tLists all the commands which are saved using squash.');
     expect(console.log.getCall(20).args[0]).to.equal('\t--help\t :  \tShow details of Squash.');
-    expect(console.log.getCall(21).args[0]).to.equal('\t--system_alias\t :  \tShow list of system reserved aliases.');
+    expect(console.log.getCall(21).args[0]).to.equal('\t--system-alias\t :  \tShow list of system reserved aliases.');
     expect(console.log.getCall(22).args[0]).to.equal('\t--pass-args\t :  \tArguments called on the alias will be passed to the command. Use when creating the alias');
     expect(console.log.getCall(23).args[0]).to.equal('\t--version\t :  \tShow Squash version');
     expect(console.log.getCall(24).args[0]).to.equal('\n');
@@ -54,7 +54,7 @@ describe('Verifies async features', function() {
     expect(console.log.getCall(28).args[0]).to.equal('\n\n');
   });
 
-  it('prints all sysytem aliases', function(){
+  it('prints all system aliases', function(){
     squash(SYSTEM_ALIAS_FLAG);
     assert.isTrue(console.log.called, 'log should have been called.');
     expect(console.log.getCall(0).args[0]).to.equal('\n');

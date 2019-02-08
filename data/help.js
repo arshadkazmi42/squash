@@ -12,7 +12,7 @@ module.exports = [
     'description': 'Show details of Squash.'
   },
   {
-    'flag': '--system_alias',
+    'flag': '--system-alias',
     'description': 'Show list of system reserved aliases.'
   },
   {
