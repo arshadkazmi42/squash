@@ -18,5 +18,9 @@ module.exports = [
   {
     'flag': '--pass-args',
     'description': 'Arguments called on the alias will be passed to the command. Use when creating the alias'
+  },
+  {
+    'flag': '--version',
+    'description': 'Show Squash version'
   }
 ];
