@@ -47,11 +47,12 @@ describe('Verifies async features', function() {
     expect(console.log.getCall(21).args[0]).to.equal('\t--system-alias\t :  \tShow list of system reserved aliases.');
     expect(console.log.getCall(22).args[0]).to.equal('\t--pass-args\t :  \tArguments called on the alias will be passed to the command. Use when creating the alias');
     expect(console.log.getCall(23).args[0]).to.equal('\t--version\t :  \tShow Squash version');
-    expect(console.log.getCall(24).args[0]).to.equal('\n');
-    expect(console.log.getCall(25).args[0]).to.equal('Notes');
-    expect(console.log.getCall(26).args[0]).to.equal(' ✔ Provide absolute path of the files/directory, if the commands uses any file/directory from your system');
-    expect(console.log.getCall(27).args[0]).to.equal(' ✔ Wrap the command in double quotes (""), if command comprises of spaces or special characters');
-    expect(console.log.getCall(28).args[0]).to.equal('\n\n');
+    expect(console.log.getCall(24).args[0]).to.equal('\t--rm\t :  \tRemoves a squash command.');
+    expect(console.log.getCall(25).args[0]).to.equal('\n');
+    expect(console.log.getCall(26).args[0]).to.equal('Notes');
+    expect(console.log.getCall(27).args[0]).to.equal(' ✔ Provide absolute path of the files/directory, if the commands uses any file/directory from your system');
+    expect(console.log.getCall(28).args[0]).to.equal(' ✔ Wrap the command in double quotes (""), if command comprises of spaces or special characters');
+    expect(console.log.getCall(29).args[0]).to.equal('\n\n');
   });
 
   it('prints all system aliases', function(){
