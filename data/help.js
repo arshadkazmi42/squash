@@ -22,5 +22,9 @@ module.exports = [
   {
     'flag': '--version',
     'description': 'Show Squash version'
-  }
+  },
+  {
+    'flag': '--rm',
+    'description': 'Removes a squash command.'
+  },
 ];
