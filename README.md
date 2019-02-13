@@ -68,6 +68,7 @@ $ list_squash
 - **--list**: to list all the created commands
 - **--system-alias**: to list all the system reserved aliases
 - **--pass-args**: arguments called on the alias will be passed to the command. Use when creating the alias
+- **--rm**: removes the previously squashed command
 
 ## Limitations
 
@@ -85,4 +86,4 @@ Read our contibution guide [here](CONTRIBUTING.md)
 
 Thank you to all the contributors who help in making this project better :raised_hands:
 
-<a href="https://github.com/arshadkazmi42"><img src="https://github.com/arshadkazmi42.png" width="30" /></a><a href="https://github.com/ArthurCueio"><img src="https://github.com/ArthurCueio.png" width="30" /></a><a href="https://github.com/alexmarginean16"><img src="https://github.com/alexmarginean16.png" width="30" /></a><a href="https://github.com/konstunn"><img src="https://github.com/konstunn.png" width="30" /></a><a href="https://github.com/mzmmlds"><img src="https://github.com/mzmmlds.png" width="30" /></a><a href="https://github.com/Zandew"><img src="https://github.com/Zandew.png" width="30" /></a><a href="https://github.com/fathurifki"><img src="https://github.com/fathurifki.png" width="30" /></a>
+<a href="https://github.com/arshadkazmi42"><img src="https://github.com/arshadkazmi42.png" width="30" /></a><a href="https://github.com/ArthurCueio"><img src="https://github.com/ArthurCueio.png" width="30" /></a><a href="https://github.com/Zandew"><img src="https://github.com/Zandew.png" width="30" /></a><a href="https://github.com/samuelweekes"><img src="https://github.com/samuelweekes.png" width="30" /></a><a href="https://github.com/alexmarginean16"><img src="https://github.com/alexmarginean16.png" width="30" /></a><a href="https://github.com/konstunn"><img src="https://github.com/konstunn.png" width="30" /></a><a href="https://github.com/mzmmlds"><img src="https://github.com/mzmmlds.png" width="30" /></a><a href="https://github.com/fathurifki"><img src="https://github.com/fathurifki.png" width="30" /></a>
