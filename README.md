@@ -62,13 +62,20 @@ $ list_squash
 ```
 
 ## Available Flags
-
-- **--alias**: to give name to a command
-- **--help**: to get help for squash
-- **--list**: to list all the created commands
-- **--system-alias**: to list all the system reserved aliases
-- **--pass-args**: arguments called on the alias will be passed to the command. Use when creating the alias
-- **--rm**: removes the previously squashed command
+#### Flags that require parameters
+```
+squash {{COMMAND}} --{{FLAG}}={{NAME_FOR_COMMAND}}
+```
+- **alias**: to give name to a command
+- **rm**: removes the previously squashed command
+#### Flags without parameters
+```
+squash --{{FLAG}}
+```
+- **help**: to get help for squash
+- **list**: to list all the created commands
+- **system-alias**: to list all the system reserved aliases
+- **pass-args**: arguments called on the alias will be passed to the command. Use when creating the alias
 
 ## Limitations
 
