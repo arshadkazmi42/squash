@@ -67,7 +67,7 @@ $ list_squash
 squash {{COMMAND}} --{{FLAG}}={{NAME_FOR_COMMAND}}
 ```
 - **alias**: to give name to a command
-- **rm**: removes the previously squashed command
+- **rm**: removes a previously squashed command
 #### Flags without parameters
 ```
 squash --{{FLAG}}
