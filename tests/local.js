@@ -13,7 +13,7 @@ const { aliasExists } = require('../lib/file-operations');
 const SQUASH_ALIAS = ['squashed'];
 const SQUASH_ALIAS_REMOVE = ['--rm=squashed'];
 const SQUASH_FLAG = ['ls', '--alias=squashed'];
-const SQUASH_PASS_ARGS = ['ls', '--pass-args', '--alias=passed-args'];
+const SQUASH_PASS_ARGS = ['ls', '--alias=passed-args', '--pass-args'];
 
 
 const validateFileContent = (file, flag) => {
