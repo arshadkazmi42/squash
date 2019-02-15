@@ -75,7 +75,7 @@ squash --{{FLAG}}
 - **help**: to get help for squash
 - **list**: to list all the created commands
 - **system-alias**: to list all the system reserved aliases
-- **pass-args**: arguments called on the alias will be passed to the command. Use when creating the alias
+- **pass-args**: arguments called on the alias will be passed to the command. Use when creating the alias (this flag should be placed before the `--alias` flag)
 
 ## Limitations
 
