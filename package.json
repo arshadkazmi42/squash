@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
     "pretest": "eslint --ignore-path .gitignore .",
-    "test": "node_modules/mocha/bin/mocha tests/test.js"
+    "test": "node_modules/mocha/bin/mocha tests/"
   },
   "bin": {
     "squash": "index.js"
