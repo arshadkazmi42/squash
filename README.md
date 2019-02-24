@@ -41,7 +41,7 @@ $ npm i -g ak-squash
 
 Once you are done with the setup. You can start giving names to your commands.
 
-You can find example usage of all the available features of squash [here](usage)
+> You can find example usage of all the available features of squash [here](usage)
 
 Syntax for using squash is
 
