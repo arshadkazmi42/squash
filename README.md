@@ -12,7 +12,7 @@
 
 Let's squash your commands.
 
-Squash converts your shell commands to a named commands and you can run the command using the name given to it using squash.
+Squash allows you to give a custom name to your shell commands. These commands can be run using the custom name.
 
 > Give us a :star: if you like our work :heart:
 
@@ -39,7 +39,7 @@ $ npm i -g ak-squash
 
 ## Usage
 
-Once you are done with the setup. You can start giving names to your commands.
+Once you are done with the setup. You can start giving custom names to your commands.
 
 > You can find example usage of all the available features of squash [here](usage)
 
@@ -47,8 +47,8 @@ Syntax for using squash is
 
 `squash {{COMMAND}} --alias={{NAME_FOR_COMMAND}}`
 
-- **COMMAND**: This is your full command which needs to be given a name
-- **NAME_FOR_COMMAND**: This is the name which you want to assign to the command
+- **COMMAND**: The shell command which will be given a name
+- **NAME_FOR_COMMAND**: The custom name
 
 **Note**: You can wrap the command between `"COMMAND"` if the command contains any types of quotes or spaces
 
@@ -74,15 +74,15 @@ squash {{COMMAND}} --{{FLAG}}={{NAME_FOR_COMMAND}}
 ```
 squash --{{FLAG}}
 ```
-- **help**: to get help for squash
-- **list**: to list all the created commands
-- **system-alias**: to list all the system reserved aliases
+- **help**: gets help for squash
+- **list**: lists all the created commands
+- **system-alias**: lists all the system reserved aliases
 - **pass-args**: arguments called on the alias will be passed to the command. Use when creating the alias
 
 ## Limitations
 
-- It does not work in windows.
-- It does not supports `cd` command
+- It does not work in Windows.
+- It does not support the `cd` command
 - **Manually exporting the path `/usr/local/.squash` is very important.**
 
 ## Contributing
