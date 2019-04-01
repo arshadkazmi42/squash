@@ -83,7 +83,7 @@ squash --{{FLAG}}
 
 - It does not work in Windows.
 - It does not support the `cd` command
-- **Manually exporting the path `/usr/local/.squash` is very important.**
+- **Manually exporting the path `$HOME/.local/share/squash` is very important.**
 
 ## Contributing
 
