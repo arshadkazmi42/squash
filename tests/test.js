@@ -13,7 +13,7 @@ const VERSION_FLAG = [ '--version' ];
 const SQUASH_ALIAS = ['squashed'];
 const SQUASH_ALIAS_REMOVE = ['--rm=squashed'];
 const SQUASH_FLAG = ['ls', '--alias=squashed'];
-const SQUASH_PASS_ARGS = ['ls', '--alias=passed-args', '--pass-args'];
+const SQUASH_PASS_ARGS = ['ls', '--alias=squashed', '--pass-args'];
 
 const PACKAGE_CONFIG = require('../package.json');
 
@@ -220,6 +220,7 @@ describe('Validating squash created', function() {
     sinon.stub(console, 'error').returns(void 0);
   });
   afterEach(function() {
+    squash(SQUASH_ALIAS_REMOVE);
     console.log.restore();
     console.error.restore();
   });
@@ -257,6 +258,6 @@ describe('Validating squash created', function() {
     expect(console.log.getCall(10).args[0]).to.equal('###       #############  ########      ######  ########  ####        ######  ########  ##');
     expect(console.log.getCall(11).args[0]).to.equal('#########################################################################################');
     expect(console.log.getCall(12).args[0]).to.equal('\n');
-    validateFileContent('passed-args', CONSTANTS.PASS_ARGS);
+    validateFileContent('squashed', CONSTANTS.PASS_ARGS);
   });
 });
