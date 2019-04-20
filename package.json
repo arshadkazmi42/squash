@@ -1,7 +1,7 @@
 {
   "name": "ak-squash",
   "description": "Creating local alias for commands",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
