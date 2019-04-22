@@ -18,13 +18,14 @@ const SQUASH_PASS_ARGS = ['ls', '--alias=squashed', '--pass-args'];
 const PACKAGE_CONFIG = require('../package.json');
 
 const validateFileContent = (file, flag) => {
-  const content = fs.readFileSync(`${CONSTANTS.ROOT_DIR}/${file}`, 'utf-8');
+  const content = fs.readFileSync(`${CONSTANTS.ROOT_DIR}/${file}`, 'utf-8').split('\n');
+  expect(content[0]).to.equal(`# ${CONSTANTS.SIGNATURE}`);
   switch (flag) {
     case CONSTANTS.PASS_ARGS:
-      expect(content).to.equal(`${SQUASH_PASS_ARGS[0]} "$@"`);
+      expect(content[1]).to.equal(`${SQUASH_PASS_ARGS[0]} "$@"`);
       break;
     default:
-      expect(content).to.equal(SQUASH_FLAG[0]);
+      expect(content[1]).to.equal(SQUASH_FLAG[0]);
       break;
   }
 };
