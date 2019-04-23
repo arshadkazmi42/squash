@@ -27,16 +27,6 @@ Please consider donating, if you like my work
 $ npm i -g ak-squash
 ```
 
-## Setup
-
-- **Export the squash path, to make the commands executable.**
-
-    `export PATH=$PATH:/usr/local/.squash`
-
-    To make this export permanent [read here](https://askubuntu.com/a/500794/579860)
-- Now try running `squash --help`. This should display details on using squash
-- This completes your setup
-
 ## Usage
 
 Once you are done with the setup. You can start giving custom names to your commands.
@@ -83,7 +73,6 @@ squash --{{FLAG}}
 
 - It does not work in Windows.
 - It does not support the `cd` command
-- **Manually exporting the path `$HOME/.local/share/squash` is very important.**
 
 ## Contributing
 
