@@ -13,18 +13,19 @@ const VERSION_FLAG = [ '--version' ];
 const SQUASH_ALIAS = ['squashed'];
 const SQUASH_ALIAS_REMOVE = ['--rm=squashed'];
 const SQUASH_FLAG = ['ls', '--alias=squashed'];
-const SQUASH_PASS_ARGS = ['ls', '--alias=passed-args', '--pass-args'];
+const SQUASH_PASS_ARGS = ['ls', '--alias=squashed', '--pass-args'];
 
 const PACKAGE_CONFIG = require('../package.json');
 
 const validateFileContent = (file, flag) => {
-  const content = fs.readFileSync(`${CONSTANTS.ROOT_DIR}/${file}`, 'utf-8');
+  const content = fs.readFileSync(`${CONSTANTS.ROOT_DIR}/${file}`, 'utf-8').split('\n');
+  expect(content[0]).to.equal(`# ${CONSTANTS.SIGNATURE}`);
   switch (flag) {
     case CONSTANTS.PASS_ARGS:
-      expect(content).to.equal(`${SQUASH_PASS_ARGS[0]} "$@"`);
+      expect(content[1]).to.equal(`${SQUASH_PASS_ARGS[0]} "$@"`);
       break;
     default:
-      expect(content).to.equal(SQUASH_FLAG[0]);
+      expect(content[1]).to.equal(SQUASH_FLAG[0]);
       break;
   }
 };
@@ -220,6 +221,7 @@ describe('Validating squash created', function() {
     sinon.stub(console, 'error').returns(void 0);
   });
   afterEach(function() {
+    squash(SQUASH_ALIAS_REMOVE);
     console.log.restore();
     console.error.restore();
   });
@@ -257,6 +259,6 @@ describe('Validating squash created', function() {
     expect(console.log.getCall(10).args[0]).to.equal('###       #############  ########      ######  ########  ####        ######  ########  ##');
     expect(console.log.getCall(11).args[0]).to.equal('#########################################################################################');
     expect(console.log.getCall(12).args[0]).to.equal('\n');
-    validateFileContent('passed-args', CONSTANTS.PASS_ARGS);
+    validateFileContent('squashed', CONSTANTS.PASS_ARGS);
   });
 });
