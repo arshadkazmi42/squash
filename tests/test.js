@@ -8,12 +8,12 @@ const { aliasExists } = require('../lib/file-operations');
 
 const HELP_FLAG = [ '--help' ];
 const SYSTEM_ALIAS_FLAG = [ '--system-alias' ];
-const LIST_FLAG = [ '--list' ];
+const LIST_FLAG = [ 'list' ];
 const VERSION_FLAG = [ '--version' ];
 const SQUASH_ALIAS = ['squashed'];
-const SQUASH_ALIAS_REMOVE = ['--rm=squashed'];
-const SQUASH_FLAG = ['ls', '--alias=squashed'];
-const SQUASH_PASS_ARGS = ['ls', '--alias=squashed', '--pass-args'];
+const SQUASH_ALIAS_REMOVE = ['rm=squashed'];
+const SQUASH_FLAG = ['ls', 'alias=squashed'];
+const SQUASH_PASS_ARGS = ['ls', 'alias=squashed', 'pass-args'];
 
 const PACKAGE_CONFIG = require('../package.json');
 
