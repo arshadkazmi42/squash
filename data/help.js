@@ -1,10 +1,10 @@
 module.exports = [
   {
-    'flag': '--alias',
+    'flag': 'alias',
     'description': 'Adds the alias for the command, this will be treated as name for that command.'
   },
   {
-    'flag': '--list',
+    'flag': 'list',
     'description': 'Lists all the commands which are saved using squash.'
   },
   {
@@ -24,7 +24,7 @@ module.exports = [
     'description': 'Show Squash version'
   },
   {
-    'flag': '--rm',
+    'flag': 'rm',
     'description': 'Removes a squash command.'
   },
 ];

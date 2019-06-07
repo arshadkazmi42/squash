@@ -45,7 +45,7 @@ Once you are done with the setup. You can start giving custom names to your comm
 
 Syntax for using squash is
 
-`squash {{COMMAND}} --alias={{NAME_FOR_COMMAND}}`
+`squash {{COMMAND}} alias={{NAME_FOR_COMMAND}}`
 
 - **COMMAND**: The shell command which will be given a name
 - **NAME_FOR_COMMAND**: The custom name
@@ -55,7 +55,7 @@ Syntax for using squash is
 #### Example
 
 ```
-$ squash ls /home/squash --alias=list_squash
+$ squash ls /home/squash alias=list_squash
 ```
 
 Now for using above created command just run
@@ -64,20 +64,21 @@ $ list_squash
 ```
 
 ## Available Flags
-#### Flags that require parameters
+#### Sub Commands Usage
 ```
-squash {{COMMAND}} --{{FLAG}}={{NAME_FOR_COMMAND}}
+squash {{COMMAND}} {{SUB_COMMAND}}={{NAME_FOR_COMMAND}}
 ```
 - **alias**: to give name to a command
 - **rm**: removes a previously squashed command
-#### Flags without parameters
-```
-squash --{{FLAG}}
-```
-- **help**: gets help for squash
 - **list**: lists all the created commands
-- **system-alias**: lists all the system reserved aliases
-- **pass-args**: arguments called on the alias will be passed to the command. Use when creating the alias
+
+#### Flags Usage
+```
+squash --{{FLAG/SUB_COMMAND}}
+```
+- **--help**: gets help for squash
+- **--system-alias**: lists all the system reserved aliases
+- **--pass-args**: arguments called on the alias will be passed to the command. (Used when creating the alias)
 
 ## Limitations
 

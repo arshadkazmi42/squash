@@ -8,12 +8,12 @@ const { aliasExists } = require('../lib/file-operations');
 
 const HELP_FLAG = [ '--help' ];
 const SYSTEM_ALIAS_FLAG = [ '--system-alias' ];
-const LIST_FLAG = [ '--list' ];
+const LIST_FLAG = [ 'list' ];
 const VERSION_FLAG = [ '--version' ];
 const SQUASH_ALIAS = ['squashed'];
-const SQUASH_ALIAS_REMOVE = ['--rm=squashed'];
-const SQUASH_FLAG = ['ls', '--alias=squashed'];
-const SQUASH_PASS_ARGS = ['ls', '--alias=squashed', '--pass-args'];
+const SQUASH_ALIAS_REMOVE = ['rm=squashed'];
+const SQUASH_FLAG = ['ls', 'alias=squashed'];
+const SQUASH_PASS_ARGS = ['ls', 'alias=squashed', '--pass-args'];
 
 const PACKAGE_CONFIG = require('../package.json');
 
@@ -59,13 +59,13 @@ describe('Verifies async features', function() {
     expect(console.log.getCall(15).args[0]).to.equal('\tsquash {{command}} {{input flags}}');
     expect(console.log.getCall(16).args[0]).to.equal('\n');
     expect(console.log.getCall(17).args[0]).to.equal('Flags:');
-    expect(console.log.getCall(18).args[0]).to.equal('\t--alias\t :  \tAdds the alias for the command, this will be treated as name for that command.');
-    expect(console.log.getCall(19).args[0]).to.equal('\t--list\t :  \tLists all the commands which are saved using squash.');
+    expect(console.log.getCall(18).args[0]).to.equal('\talias\t :  \tAdds the alias for the command, this will be treated as name for that command.');
+    expect(console.log.getCall(19).args[0]).to.equal('\tlist\t :  \tLists all the commands which are saved using squash.');
     expect(console.log.getCall(20).args[0]).to.equal('\t--help\t :  \tShow details of Squash.');
     expect(console.log.getCall(21).args[0]).to.equal('\t--system-alias\t :  \tShow list of system reserved aliases.');
     expect(console.log.getCall(22).args[0]).to.equal('\t--pass-args\t :  \tArguments called on the alias will be passed to the command. Use when creating the alias');
     expect(console.log.getCall(23).args[0]).to.equal('\t--version\t :  \tShow Squash version');
-    expect(console.log.getCall(24).args[0]).to.equal('\t--rm\t :  \tRemoves a squash command.');
+    expect(console.log.getCall(24).args[0]).to.equal('\trm\t :  \tRemoves a squash command.');
     expect(console.log.getCall(25).args[0]).to.equal('\n');
     expect(console.log.getCall(26).args[0]).to.equal('Notes');
     expect(console.log.getCall(27).args[0]).to.equal(' ✔ Provide absolute path of the files/directory, if the commands uses any file/directory from your system');
