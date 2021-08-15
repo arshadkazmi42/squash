@@ -1,7 +1,7 @@
 {
   "name": "ak-squash",
   "description": "Creating local alias for commands",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
@@ -33,9 +33,9 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^5.2.0",
-    "sinon": "^7.2.2",
     "eslint": "^5.11.1",
-    "eslint-config-strongloop": "^2.1.0"
+    "eslint-config-strongloop": "^2.1.0",
+    "mocha": "^5.2.0",
+    "sinon": "^7.2.2"
   }
 }
