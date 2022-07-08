@@ -86,9 +86,3 @@ We are constantly working on improving squash and we need all the help we can ge
 You can contribute to this project by giving [suggestions](https://github.com/arshadkazmi42/squash/issues/new), fixing open [issues](https://github.com/arshadkazmi42/squash/issues) or by implementing a new feature.
 Read our contibution guide [here](CONTRIBUTING.md)
 
-## Contributors
-
-Thank you to all the contributors who help in making this project better :raised_hands:
-
-<a href="https://github.com/arshadkazmi42"><img src="https://github.com/arshadkazmi42.png" width="30" /></a><a href="https://github.com/ArthurCueio"><img src="https://github.com/ArthurCueio.png" width="30" /></a><a href="https://github.com/Zandew"><img src="https://github.com/Zandew.png" width="30" /></a><a href="https://github.com/co16353sidak"><img src="https://github.com/co16353sidak.png" width="30" /></a><a href="https://github.com/samuelweekes"><img src="https://github.com/samuelweekes.png" width="30" /></a><a href="https://github.com/alexmarginean16"><img src="https://github.com/alexmarginean16.png" width="30" /></a><a href="https://github.com/Aneal-Sharma"><img src="https://github.com/Aneal-Sharma.png" width="30" /></a><a href="https://github.com/ConSou"><img src="https://github.com/ConSou.png" width="30" /></a><a href="https://github.com/jsmiith"><img src="https://github.com/jsmiith.png" width="30" /></a><a href="https://github.com/konstunn"><img src="https://github.com/konstunn.png" width="30" /></a><a href="https://github.com/mzmmlds"><img src="https://github.com/mzmmlds.png" width="30" /></a><a href="https://github.com/fathurifki"><img src="https://github.com/fathurifki.png" width="30" /></a>
-
