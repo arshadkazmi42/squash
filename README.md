@@ -1,6 +1,6 @@
 # Squash :tada:
 
-[![Build](https://img.shields.io/travis/com/arshadkazmi42/squash.svg)](https://travis-ci.com/arshadkazmi42/squash/)
+[![Build](https://github.com/arshadkazmi42/squash/actions/workflows/nodejs.yml/badge.svg)](https://github.com/arshadkazmi42/squash/actions/workflows/nodejs.yml)
 [![NPM Downloads](https://img.shields.io/npm/dt/ak-squash.svg)](https://www.npmjs.com/package/ak-squash)
 [![Package Size](https://img.shields.io/bundlephobia/min/squash.svg)](https://www.npmjs.com/package/ak-squash)
 [![NPM Version](https://img.shields.io/npm/v/ak-squash.svg)](https://www.npmjs.com/package/ak-squash)
