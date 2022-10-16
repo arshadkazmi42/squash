@@ -1,15 +1,8 @@
 name: Node CI
 
 on:
-  push:
-    branches:
-      - 'master'
-  pull_request:
-    types: 
-      - opened
-      - reopened
-    branches:
-      - 'master'
+  - push
+  - pull_request
 
 jobs:
   build:
